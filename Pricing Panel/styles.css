@@ -1,13 +1,71 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CSS STYLE */
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #60a9ff;
+}
+
 .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 1750px;
+    min-height: 100vh;
 }
 
 .column {
-    background-color: #50505090;
+    background-color: #FFFFFF;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -20,45 +78,50 @@
 }
 
 img {
-    max-width: 100px;
+    max-width: 200px;
+    margin-bottom: 30px;
 }
 
 h3 {
-    font-family: Poppins, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     font-size: 30px;
-    color: grey;
+    color: #888;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 p {
-    font-family: Poppins, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    border-top: 2px solid lightblue;
+    border-top: 2px solid #e1f1ff;
     padding: 15px 0px;
     text-align: center;
     margin: 0px;
     text-transform: uppercase;
     width: 200px;
-    color: lightblue;
+    color: #016ff9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
 button {
-    font-family: Poppins, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     border-radius: 5px;
-    border: 1px solid lightblue;
+    border: 1px solid #e1f1ff;
     padding: 10px 25px;
     font-size: 20px;
     text-transform: uppercase;
-    color: lightblue;
-    background-color: #FFFFFF10;
+    color: #348efe;
+    background-color: #e1f1ff;
     margin-top: 25px;
 }
 
-button:hover {
-    background-color: lightblue;
+button:hover,
+button:focus {
+    background-color: #269aff;
     color: #FFFFFF;
-    border: 1px solid lightblue;
+    border: 1px solid #269aff;
 }
 
 .price {
@@ -68,15 +131,15 @@ button:hover {
 }
 
 #selected {
-    background-color: lightblue;
+    background-color: #348efe;
     color: #FFFFFF;
-    border: 1px solid lightblue;
+    border: 1px solid #348efe;
 }
 
 #selected:hover {
-    background-color: darkblue;
+    background-color: #48aaff;
     color: #FFFFFF;
-    border: 1px solid lightblue;
+    border: 1px solid #48aaff;
 }
 
 /* MEDIA QUERIES */
